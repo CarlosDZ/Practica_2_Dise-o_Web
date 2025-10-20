@@ -1,0 +1,7 @@
+Comercio local.
+Pagina de presentacion, de enseñar productos y de contacto.
+
+TEMATICA:
+    Oscura, Colorida
+
+Guia de estilos, Diseño en canva mismo o figma o lo que sea, y luego HTML y CSS.
