@@ -11,3 +11,44 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Grenze-Regular';
+  src: url('./fonts/Grenze-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreckleFace-Regular';
+  src: url('./fonts/FreckleFace-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Audiowide-Regular';
+  src: url('./fonts/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#header1 {
+  font-family: 'Zingo';
+  font-size: 48px;
+}
+
+#header2 {
+  font-family: 'Grenze-Regular';
+  font-size: 48px;
+}
+
+#header3 {
+  font-family: 'FreckleFace-Regular';
+  font-size: 48px;
+}
+#header4 {
+  font-family: 'Audiowide-Regular';
+  font-size: 48px;
+}
