@@ -149,3 +149,13 @@ font-family: 'Audiowide-Regular';
 .botonesMenuOculto:hover{
   cursor: pointer;
 }
+
+svg{
+  stroke: #170A1C;
+}
+svg:hover{
+  stroke: blue;
+}
+svg:active{
+  transform: scale(0.9);
+}
