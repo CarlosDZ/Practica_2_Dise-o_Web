@@ -17,6 +17,10 @@
 
 }
 
+body {
+  background-color: var(--background);
+}
+
 @font-face {
   font-family: 'Zingo';
   src: url('./fonts/Zingo\ Regular.otf') format('truetype');
@@ -170,4 +174,35 @@ svg:hover{
 }
 svg:active{
   transform: scale(0.9);
+}
+
+#eventos {
+  margin-top: 15rem;
+  padding: 12px;
+
+
+  h1 {
+    text-align: center;
+  }
+
+}
+
+.card {
+  background-color: var(--background-card);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+
+  img {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+  }
+}
+
+.card-details {
+  padding: 10px;
+  margin: 10px;
 }
