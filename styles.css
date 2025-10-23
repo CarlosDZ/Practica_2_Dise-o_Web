@@ -5,6 +5,18 @@
 }
 
 
+:root {
+  --background: #170a1c;
+  --highlight-event : #ff1754;
+  --background-card: #2b1343;
+  --background-deployed-menu: linear-gradient(45deg,rgba(122, 231, 199, 1) 0%, rgba(240, 225, 0, 1) 55%, rgba(23, 10, 28, 1) 55%, rgba(122, 231, 199, 1) 100%);
+  --background-contact: linear-gradient(1deg, #593f6e 0%, #412958 50%, var(--background-card) 100%);
+  --background-input-first-column: #89709c;
+  --background-input-second-column: #70578f;
+  --background-input-third-column: #412958;
+
+}
+
 @font-face {
   font-family: 'Zingo';
   src: url('./fonts/Zingo\ Regular.otf') format('truetype');
