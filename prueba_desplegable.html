@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vista Oculta</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #pantalla {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(
+        45deg, 
+        #F0E100 55%,
+        #170A1C 45%
+        );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0; /* completamente invisible */
+      pointer-events: none; /* no interactuable mientras está oculta */
+      transition: opacity 0.5s ease;
+    }
+
+    #pantalla.visible {
+      opacity: 0.8; /* semitransparente */
+      pointer-events: auto; /* ahora sí interactuable */
+    }
+
+    #contenido {
+      color: white;
+      font-size: 2rem;
+    }
+
+    button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="mostrarPantalla()">Mostrar vista</button>
+
+  <div id="pantalla">
+    <div id="contenido">Contenido en pantalla completa</div>
+  </div>
+
+  <script>
+    function mostrarPantalla() {
+      document.getElementById('pantalla').classList.add('visible');
+    }
+  </script>
+
+</body>
+</html>

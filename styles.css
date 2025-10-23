@@ -52,3 +52,100 @@
   font-family: 'Audiowide-Regular';
   font-size: 48px;
 }
+
+#MenuDesplegable{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #7AE7C7;
+      background: linear-gradient(45deg,rgba(122, 231, 199, 1) 0%, rgba(240, 225, 0, 1) 55%, rgba(23, 10, 28, 1) 55%, rgba(122, 231, 199, 1) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+}
+
+#MenuDesplegable.visible{
+  opacity: 0.9;
+  pointer-events: auto;
+}
+
+#botonMenuBase.invisible{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.botonMenu{
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  width: 10%;
+  height: 10%;
+  border: none;
+  background: none;
+}
+
+.botonMenu:hover{
+  cursor: pointer;
+}
+
+#menuPrincipal{
+font-family: 'Audiowide-Regular';
+  font-size: 10vh;
+    color: #170A1C;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+}
+#menuEventos{
+font-family: 'Audiowide-Regular';
+  font-size: 10vh;
+  color: #170A1C;
+      position: absolute;
+      top: 45%;
+      left: 30%;
+
+}
+#menuContacto{
+font-family: 'Audiowide-Regular';
+  font-size: 10vh;
+    color: #170A1C;
+        position: absolute;
+      top: 75%;
+      left: 40%;
+}
+
+#menuEventos:hover{
+  color: blue;
+}
+
+#menuPrincipal:hover{
+  color: blue;
+}
+
+#menuContacto:hover{
+  color: blue;
+}
+
+#menuEventos:active{
+  color: blue;
+  transform: scale(0.8);
+}
+
+#menuPrincipal:active{
+  color: blue;
+  transform: scale(0.8);
+}
+
+#menuContacto:active{
+  color: blue;
+  transform: scale(0.9);
+}
+
+.botonesMenuOculto:hover{
+  cursor: pointer;
+}
