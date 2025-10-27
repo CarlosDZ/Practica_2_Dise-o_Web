@@ -7,43 +7,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Vault</title>
 </head>
-<body>
-    
-  <button class="botonMenu" onclick="mostrarPantalla()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2" id="botonMenuBase">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M4 6l16 0" />
-      <path d="M4 12l16 0" />
-      <path d="M4 18l16 0" />
-    </svg>
-  </button>
-  <div id="MenuDesplegable">
+<body id="contact-body">
+  <header id="contact-header">
+    <img src="/public/icons/logo.png" alt="">
     <button class="botonMenu" onclick="mostrarPantalla()">
-  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96"
-       viewBox="0 0 24 24" fill="none" stroke="currentColor"
-       stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-       class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <path d="M4 6h16" />
-    <path d="M7 12h13" />
-    <path d="M10 18h10" />
-  </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2" id="botonMenuBase">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
     </button>
-    <a href="index.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuPrincipal">Principal</h1></button></a>
-    <a href="eventos.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuEventos">Eventos</h1></button></a>
-    <a href="contacto.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuContacto">Contacto</h1></button></a>
-  </div>
-  <header>
-    <nav>
-
-    </nav>
+    <div id="MenuDesplegable">
+      <button class="botonMenu" onclick="mostrarPantalla()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 6h16" />
+      <path d="M7 12h13" />
+      <path d="M10 18h10" />
+    </svg>
+      </button>
+      <a href="index.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuPrincipal">Principal</h1></button></a>
+      <a href="eventos.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuEventos">Eventos</h1></button></a>
+      <a href="contacto.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuContacto">Contacto</h1></button></a>
+    </div>
   </header>
   <main>
-    <section></section>
-    <section>
-      <article></article>
-    </section>
+    <div id="contact-content">
+      <h1>CONTÁCTANOS</h1>
+      <table>
+        <tr>
+          <td><input class="first-row" type="text" placeholder="NOMBRE"></td>
+          <td><input class="first-row" type="text" placeholder="APELLIDO"></td>
+        </tr>
+        <tr>
+          <td><input class="second-row" type="email" placeholder="EMAIL"></td>
+          <td><input class="second-row" type="tel" placeholder="TELEFONO"></td>
+        </tr>
+        <tr></tr>
+          <td colspan="2"><textarea name="mensaje" id="mensaje-txtarea" placeholder="Escribe tu mensaje aquí..."></textarea></td>
+        </tr>
+      </table>
+
+      <button type="submit" id="button-contact">Enviar</button>
+    </div>
   </main>
-  <footer></footer>
+  <footer>
+    <hr>
+    <p>&copy; 2025 | VAULT | ALL RIGHT RESERVED</p>
+  </footer>
 </body>
 </html>
