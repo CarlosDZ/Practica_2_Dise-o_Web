@@ -9,6 +9,7 @@
 </head>
 <body>
   <header>
+    <img src="/public/logoRosa.png" alt="">
     <button class="botonMenu" onclick="mostrarPantalla()">
     <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2" id="botonMenuBase">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -18,7 +19,7 @@
     </svg>
   </button>
   <div id="MenuDesplegable">
-    <button class="botonMenu" onclick="mostrarPantalla()">
+    <button class="botonMenu" id="boton-menu-eventos" onclick="mostrarPantalla()" >
   <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96"
        viewBox="0 0 24 24" fill="none" stroke="currentColor"
        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -34,23 +35,26 @@
     <a href="contacto.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuContacto">Contacto</h1></button></a>
   </div>
   </header>
+
   <main id="eventos">
     <h1>Eventos</h1>
-    <article class="card">
-      <img src="image.png" alt="">
-      <div class="card-details">
-        <h2>Nombre evento</h2>
-        <div class="info-event">
-          svg
-          <p>31 OCTUBRE 2025</p>
+    <section class="cards-container">
+      <article class="card">
+        <img src="image.png" alt="">
+        <div class="card-details">
+          <h2>Nombre evento</h2>
+          <div class="info-event">
+            svg
+            <p>31 OCTUBRE 2025</p>
+          </div>
+          <div class="info-event">
+            svg
+            <p>Ciudad, País</p>
+          </div>
+          <button type="button">Tickets</button>
         </div>
-        <div class="info-event">
-          svg
-          <p>Ciudad, País</p>
-        </div>
-        <button type="button">Tickets</button>
-      </div>
-    </article>
+      </article>
+    </section>
 
   </main>
   <footer></footer>
