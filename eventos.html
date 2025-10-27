@@ -9,6 +9,7 @@
 </head>
 <body>
   <header>
+    <img src="/public/icons/logoRosa.png" alt="">
     <button class="botonMenu" onclick="mostrarPantalla()">
     <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2" id="botonMenuBase">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -18,7 +19,7 @@
     </svg>
   </button>
   <div id="MenuDesplegable">
-    <button class="botonMenu" onclick="mostrarPantalla()">
+    <button class="botonMenu" id="boton-menu-eventos" onclick="mostrarPantalla()" >
   <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96"
        viewBox="0 0 24 24" fill="none" stroke="currentColor"
        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -34,25 +35,62 @@
     <a href="contacto.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuContacto">Contacto</h1></button></a>
   </div>
   </header>
+
   <main id="eventos">
     <h1>Eventos</h1>
-    <article class="card">
-      <img src="image.png" alt="">
-      <div class="card-details">
-        <h2>Nombre evento</h2>
-        <div class="info-event">
-          svg
-          <p>31 OCTUBRE 2025</p>
+    <section class="cards-container">
+      <article class="card">
+        <img src="/public/image.png" alt="">
+        <div class="card-details">
+          <h2>VAULT HALLOWEEN EDITION - THE HELL</h2>
+          <div class="info-event">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>
+            <p>31 OCTUBRE 2025</p>
+          </div>
+          <div class="info-event">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+            <p>EDELFETTWER - HAMBURGO</p>
+          </div>
+          <button type="button">Tickets</button>
         </div>
-        <div class="info-event">
-          svg
-          <p>Ciudad, País</p>
-        </div>
-        <button type="button">Tickets</button>
-      </div>
-    </article>
+      </article>
 
+      <article class="card">
+        <img src="/public/card2.jpg" alt="">
+        <div class="card-details">
+          <h2>VAULT TECHNO RITUAL - BLOOD BEATS</h2>
+          <div class="info-event">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>
+            <p>15 NOVIEMBRE 2025</p>
+          </div>
+          <div class="info-event">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+            <p>BERLÍN - ALEMANIA</p>
+          </div>
+          <button type="button">Tickets</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="/public/card3.jpg" alt="">
+        <div class="card-details">
+          <h2>VAULT DARK SESSION - VOID FREQUENCIES</h2>
+          <div class="info-event">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 7v5l3 3" /></svg>
+            <p>13 DICIEMBRE 2025</p>
+          </div>
+          <div class="info-event">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+            <p>MADRID - ESPAÑA</p>
+          </div>
+          <button type="button">Tickets</button>
+        </div>
+      </article>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <hr>
+    <p>&copy; 2025 | VAULT | ALL RIGHT RESERVED</p>
+  </footer>
 </body>
 </html>

@@ -8,66 +8,94 @@
 :root {
   --background: #170a1c;
   --highlight-event : #ff1754;
+  --hightlight-event-hover: #9e0b32;
   --background-card: #2b1343;
   --background-deployed-menu: linear-gradient(45deg,rgba(122, 231, 199, 1) 0%, rgba(240, 225, 0, 1) 55%, rgba(23, 10, 28, 1) 55%, rgba(122, 231, 199, 1) 100%);
   --background-contact: linear-gradient(1deg, #593f6e 0%, #412958 50%, var(--background-card) 100%);
   --background-input-first-column: #89709c;
   --background-input-second-column: #70578f;
   --background-input-third-column: #412958;
+  --hr: #271130;
 
 }
+
+
+@font-face {
+  font-family: 'Zingo';
+  src: url('./public/fonts/Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Grenze-Regular';
+  src: url('./public/fonts/Grenze-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreckleFace-Regular';
+  src: url('./public/fonts/FreckleFace-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Audiowide-Regular';
+  src: url('./public/fonts/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   background-color: var(--background);
 }
 
-@font-face {
-  font-family: 'Zingo';
-  src: url('./fonts/Zingo\ Regular.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 150px;
+    margin: 20px;
+  }
 }
 
-@font-face {
-  font-family: 'Grenze-Regular';
-  src: url('./fonts/Grenze-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--background);
+  color: #FFFFFF;
+  font-family: 'Gerze-Regular';
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  hr {
+    border: 1px solid var(--hr);
+    margin-bottom: 10px;
+  }
 }
 
-@font-face {
-  font-family: 'FreckleFace-Regular';
-  src: url('./fonts/FreckleFace-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+  pointer-events: none;
 }
 
-@font-face {
-  font-family: 'Audiowide-Regular';
-  src: url('./fonts/Audiowide-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-#header1 {
-  font-family: 'Zingo';
-  font-size: 48px;
-}
-
-#header2 {
-  font-family: 'Grenze-Regular';
-  font-size: 48px;
-}
-
-#header3 {
-  font-family: 'FreckleFace-Regular';
-  font-size: 48px;
-}
-#header4 {
-  font-family: 'Audiowide-Regular';
-  font-size: 48px;
-}
 
 #MenuDesplegable{
       position: fixed;
@@ -88,6 +116,10 @@ body {
 #MenuDesplegable.visible{
   opacity: 0.9;
   pointer-events: auto;
+}
+
+#botonMenuBase {
+  stroke: var(--highlight-event)
 }
 
 #botonMenuBase.invisible{
@@ -177,20 +209,54 @@ svg:active{
 }
 
 #eventos {
-  margin-top: 15rem;
-  padding: 12px;
-
+  text-align: center;
 
   h1 {
-    text-align: center;
+    font-family: 'Audiowide-Regular';
+    color: var(--highlight-event);
+    font-size: 4rem;
+    margin: 2rem;
   }
+
+  button {
+    font-family: 'Audiowide-Regular';
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 5rem;
+
+    background: var(--highlight-event);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+  }
+
+  button:hover button:focus {
+    cursor: pointer;
+    background: var(--hightlight-event-hover);
+    border: 2px solid;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
 
 }
 
 .card {
-  background-color: var(--background-card);
+  background: var(--background-card);
   border-radius: 10px;
+
+  min-width: 800px;
+  width: 70%;
   padding: 2rem;
+
   display: flex;
   justify-content: flex-start;
   gap: 3rem;
@@ -204,5 +270,82 @@ svg:active{
 
 .card-details {
   padding: 10px;
-  margin: 10px;
+  text-align: center;
+  
+  font-family: 'Grenze-Regular';
+  color: #FFFFFF;
+  font-weight: 800;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.info-event {
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  svg {
+    stroke: var(--highlight-event);
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+#contact-body {
+  background: var(--background-contact);
+}
+
+#contact-content {
+  background: var(--background-card);
+  width: 60%;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Grenze-Regular';
+  text-align: center;
+  align-items: center;
+
+  ::placeholder {
+    color: white;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 5rem;
+  }
+
+  input {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Grenze-Regular';
+  }
+}
+
+.first-row {
+  background-color: var(--background-input-first-column);
+}
+
+.second-row {
+  background-color: var(--background-input-second-column);
+}
+
+#mensaje-txtarea {
+  background-color: var(--background-input-third-column);
+  border-radius: 10px;
+  border: none;
+  width: 90%;
+  height: 150px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: 'Grenze-Regular';
 }
