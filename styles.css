@@ -16,13 +16,14 @@
   --background-input-second-column: #70578f;
   --background-input-third-column: #412958;
   --hr: #271130;
+  --button-hover-contact: #2e1d3f;
 
 }
 
 
 @font-face {
   font-family: 'Zingo';
-  src: url('./public/fonts/Regular.otf') format('truetype');
+  src: url('./public/fonts/Zingo-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -194,6 +195,13 @@ font-family: 'Audiowide-Regular';
   transform: scale(0.9);
 }
 
+#index-main {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Zingo';
+  margin-top: 25vh;
+  font-size: 5vh;
+}
 .botonesMenuOculto:hover{
   cursor: pointer;
 }
@@ -303,13 +311,17 @@ svg:active{
 #contact-content {
   background: var(--background-card);
   width: 60%;
-  margin: 5rem auto;
+  margin: 2rem auto;
   padding: 2rem;
   border-radius: 10px;
   font-family: 'Grenze-Regular';
   text-align: center;
   align-items: center;
 
+  svg {
+    stroke: var(--background-input-first-column);
+    width: 2rem;
+  }
   ::placeholder {
     color: white;
   }
@@ -329,6 +341,11 @@ svg:active{
     color: white;
     font-family: 'Grenze-Regular';
   }
+
+  table {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 
 .first-row {
@@ -343,9 +360,27 @@ svg:active{
   background-color: var(--background-input-third-column);
   border-radius: 10px;
   border: none;
-  width: 90%;
+  width: 95%;
   height: 150px;
   padding: 1rem;
   font-size: 1.2rem;
   font-family: 'Grenze-Regular';
+}
+
+#button-contact {
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: 'Grenze-Regular';
+  color: white;
+  background-color: var(--background-input-third-column);
+  margin-top: 2rem;
+}
+
+#button-contact:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-contact);
+  transform: scale(0.95);
+  border: 2px solid white;
 }
