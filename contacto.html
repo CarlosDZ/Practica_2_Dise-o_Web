@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Vault</title>
@@ -30,9 +29,9 @@
       <path d="M10 18h10" />
     </svg>
       </button>
-      <a href="index.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuPrincipal">Principal</h1></button></a>
-      <a href="eventos.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuEventos">Eventos</h1></button></a>
-      <a href="contacto.html"><button class="botonesMenuOculto"><h1 class="textosMenu" id="menuContacto">Contacto</h1></button></a>
+      <a href="index.html"><h1 class="textosMenu" id="menuPrincipal">Principal</h1></a>
+      <a href="eventos.html"><h1 class="textosMenu" id="menuEventos">Eventos</h1></a>
+      <a href="contacto.html"><h1 class="textosMenu" id="menuContacto">Contacto</h1></a>
     </div>
   </header>
   <main>
@@ -40,18 +39,17 @@
       <h1>CONTÁCTANOS</h1>
       <table>
         <tr>
-          <td><input class="first-row" type="text" placeholder="NOMBRE"></td>
-          <td><input class="first-row" type="text" placeholder="APELLIDO"></td>
+          <td><input class="first-row" type="text" placeholder="NOMBRE" id="inputNombre"></td>
+          <td><input class="first-row" type="text" placeholder="APELLIDO" id="inputApellido"></td>
         </tr>
         <tr>
-          <td><input class="second-row" type="email" placeholder="EMAIL"></td>
-          <td><input class="second-row" type="tel" placeholder="TELEFONO"></td>
+          <td><input class="second-row" type="email" placeholder="EMAIL" id="inputEmail"></td>
+          <td><input class="second-row" type="tel" placeholder="TELEFONO" id="inputTlf"></td>
         </tr>
         <tr></tr>
           <td colspan="2"><textarea name="mensaje" id="mensaje-txtarea" placeholder="Escribe tu mensaje aquí..."></textarea></td>
         </tr>
       </table>
-
       <button type="submit" id="button-contact">Enviar</button>
     </div>
   </main>
@@ -59,5 +57,9 @@
     <hr>
     <p>&copy; 2025 | VAULT | ALL RIGHT RESERVED</p>
   </footer>
+
+  <script src="script.js"></script>
+
+
 </body>
 </html>
