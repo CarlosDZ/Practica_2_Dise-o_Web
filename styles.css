@@ -117,6 +117,7 @@ footer {
 #MenuDesplegable.visible{
   opacity: 0.9;
   pointer-events: auto;
+  
 }
 
 #botonMenuBase {
@@ -144,55 +145,63 @@ footer {
 
 #menuPrincipal{
 font-family: 'Audiowide-Regular';
-  font-size: 10vh;
+  font-size: clamp(1.5rem, 5vw, 12rem);
     color: #170A1C;
     position: absolute;
     top: 20%;
     left: 17%;
+    transition: transform 0.15s ease;
+    transform: translate(-50%, -50%);
 }
 #menuEventos{
 font-family: 'Audiowide-Regular';
-  font-size: 10vh;
+  font-size: clamp(1.5rem, 5vw, 12rem);
   color: #170A1C;
       position: absolute;
       top: 45%;
       left: 30%;
-
+    transition: transform 0.15s ease;
+    transform: translate(-50%, -50%);
 }
 #menuContacto{
 font-family: 'Audiowide-Regular';
-  font-size: 10vh;
+  font-size: clamp(1.5rem, 5vw, 12rem);
     color: #170A1C;
         position: absolute;
       top: 75%;
       left: 40%;
+    transition: transform 0.15s ease;
+    transform: translate(-50%, -50%);
 }
 
 #menuEventos:hover{
-  color: blue;
+  color: var(--highlight-event);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 #menuPrincipal:hover{
-  color: blue;
+  color: var(--highlight-event);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 #menuContacto:hover{
-  color: blue;
+  color: var(--highlight-event);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 #menuEventos:active{
-  color: blue;
-  transform: scale(0.8);
+  color: var(--highlight-event);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 #menuPrincipal:active{
-  color: blue;
-  transform: scale(0.8);
+  color: var(--highlight-event);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 #menuContacto:active{
-  color: blue;
-  transform: scale(0.9);
+  color: var(--highlight-event);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 #index-main {
@@ -202,15 +211,12 @@ font-family: 'Audiowide-Regular';
   margin-top: 25vh;
   font-size: 5vh;
 }
-.botonesMenuOculto:hover{
-  cursor: pointer;
-}
 
 svg{
   stroke: #170A1C;
 }
 svg:hover{
-  stroke: blue;
+  stroke: var(--highlight-event);
 }
 svg:active{
   transform: scale(0.9);
@@ -365,6 +371,7 @@ svg:active{
   padding: 1rem;
   font-size: 1.2rem;
   font-family: 'Grenze-Regular';
+  color: white;
 }
 
 #button-contact {
@@ -376,11 +383,39 @@ svg:active{
   color: white;
   background-color: var(--background-input-third-column);
   margin-top: 2rem;
+  transition: transform 0.2s ease;
 }
 
 #button-contact:hover {
   cursor: pointer;
   background-color: var(--button-hover-contact);
-  transform: scale(0.95);
+  transform: scale(1.1);
   border: 2px solid white;
 }
+#button-contact:active{
+  transform: scale(1);
+}
+
+.botonesTicketsEventos:hover:not(:active){
+ cursor: pointer;
+ transform:scale(1.1);
+}
+
+.botonesTicketsEventos{
+  transition: transform 0.18s ease;
+}
+.botonesTicketsEventos:active{
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.correcto {
+  outline: 2px solid green;
+  outline-offset: 2px;
+}
+
+.incorrecto {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
