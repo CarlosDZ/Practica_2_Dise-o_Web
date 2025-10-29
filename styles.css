@@ -323,6 +323,7 @@ svg:active{
   font-family: 'Grenze-Regular';
   text-align: center;
   align-items: center;
+  max-width: 60%;
 
   svg {
     stroke: var(--background-input-first-column);
