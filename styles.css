@@ -419,3 +419,17 @@ svg:active{
   outline-offset: 2px;
 }
 
+#botonLogo{
+  border: none;
+  background: none;
+}
+
+#logo{
+  transition: transform 0.2s ease;
+}
+#logo:hover{
+  transform: scale(1.2);
+}
+#logo:active{
+  transform: scale(1);
+}
